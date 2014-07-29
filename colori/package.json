@@ -1,0 +1,14 @@
+{
+  "name": "colori",
+  "version": "0.0.0",
+  "description": "colori",
+  "main": "app.js",
+  "author": {
+    "name": "jchan",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "dot-emc": "^0.1.2"
+  }
+}
