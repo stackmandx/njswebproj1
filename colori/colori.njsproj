@@ -31,8 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\javascripts\main.js" />
     <Compile Include="routes\index.js" />
     <Content Include="package.json" />
+    <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
     <Content Include="views\index.dot" />
   </ItemGroup>
