@@ -33,7 +33,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.all('/*', routes.index);
+app.all('/', routes.index);
 app.all('/index', routes.index);
 app.all('/menu', routes.menu);
 app.all('/catering', routes.catering);
@@ -41,13 +41,6 @@ app.all('/gallery', routes.gallery);
 app.all('/reservations', routes.reserve);
 app.all('/luigi', routes.luigi);
 app.all('/contact', routes.contact);
-app.error(function(err, req, res, next){
-    if (err instanceof NotFound) {
-        res.render('404');
-    } else {
-        next(err);
-    }
-});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

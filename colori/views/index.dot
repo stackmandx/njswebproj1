@@ -1,4 +1,4 @@
-﻿<html lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand"><strong>CLEAN CANVAS</strong></a>
+                    <a href="index.html" class="navbar-brand"><strong>colori kitchen</strong></a>
                 </div>
 
                 <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
@@ -65,6 +65,12 @@
           <a class="carousel-control left" href="#carousel" data-slide="prev">‹</a>
           <a class="carousel-control right" href="#carousel" data-slide="next">›</a>
         </div>
+
+	<div class="content about" id="main">
+		<div>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim felis, mattis ac massa vel, cursus gravida augue. Donec et posuere ante, et auctor ligula. Fusce sed magna id lacus interdum mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget sagittis risus. Mauris nunc massa, semper eu vulputate id, ullamcorper eget ipsum. Proin id rutrum velit. Sed sit amet turpis faucibus, cursus elit vel, facilisis dui. Sed id interdum mauris, quis malesuada est. Praesent gravida convallis pharetra. Vestibulum orci lorem, condimentum ut leo quis, ultrices ornare nibh. Duis at quam eu quam ultrices euismod. Donec commodo faucibus neque ac aliquam. Quisque risus ipsum, egestas sit amet ultrices nec, aliquam non ante.
+		</div>
+	</div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
