@@ -32,6 +32,9 @@ require("./node_modules/dot-emc/node_modules/dot").templateSettings.strip =false
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+app.configure("development", function() {
+    require("./node_modules/dot-emc/node_modules/dot").templateSettings.cache = false;
+});
 
 app.all('/', routes.index);
 app.all('/index', routes.index);

@@ -1,13 +1,17 @@
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+﻿<html lang="en">
 
-        <title>Colori Kitchen</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Colori Kitchen</title>
+
+    <!-- #region Bootstrap/FontAwesome -->
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -19,65 +23,94 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <link rel="stylesheet" href="public/stylesheets/main.css">
+    <!-- #endregion -->
+    <link rel="stylesheet" href="public/stylesheets/main.css">
 
-    </head>
-    <body class="pull_top">
-        <div class="navbar navbar-inverse navbar-fixed-top sticky" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="index.html" class="navbar-brand"><strong>colori kitchen</strong></a>
-                </div>
+</head>
 
-                <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index">HOME</a></li>
-                        <li><a href="about">ABOUT</a></li>
-                        <li><a href="menu">MENU</a></li>
-                        <li><a href="catering">CATERING</a></li>
-                        <li><a href="gallery">GALLERY</a></li>
-                        <li><a href="luigi">LUIGI'S CORNER</a></li>
-                        <li><a href="contact">CONTACT US</a></li>
-                    </ul>
-                </div>
+<body class="pull_top">
+    <div class="navbar navbar-inverse navbar-fixed-top sticky" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><strong>colori kitchen</strong></a>
             </div>
-        </div>
 
-        <div id="carousel" class="carousel slide carousel-fade">
-          <ol class="carousel-indicators">
+            <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="menu">MENU</a></li>
+                    <li><a href="catering">CATERING</a></li>
+                    <li><a href="gallery">GALLERY</a></li>
+                    <li><a href="luigi">LUIGI'S CORNER</a></li>
+                    <li><a href="contact">CONTACT US</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- #region Background slideshow -->
+
+    <div id="carousel" class="carousel container slide carousel-fade">
+        <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
             <li data-target="#carousel" data-slide-to="2"></li>
-          </ol>
-          
-          <div class="carousel-inner">
+        </ol>
+
+        <div class="carousel-inner">
             <div class="active item"></div>
             <div class="item"></div>
             <div class="item"></div>
-          </div>
-
-          <a class="carousel-control left" href="#carousel" data-slide="prev">‹</a>
-          <a class="carousel-control right" href="#carousel" data-slide="next">›</a>
         </div>
 
-	<div class="content about" id="main">
-		<div>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim felis, mattis ac massa vel, cursus gravida augue. Donec et posuere ante, et auctor ligula. Fusce sed magna id lacus interdum mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget sagittis risus. Mauris nunc massa, semper eu vulputate id, ullamcorper eget ipsum. Proin id rutrum velit. Sed sit amet turpis faucibus, cursus elit vel, facilisis dui. Sed id interdum mauris, quis malesuada est. Praesent gravida convallis pharetra. Vestibulum orci lorem, condimentum ut leo quis, ultrices ornare nibh. Duis at quam eu quam ultrices euismod. Donec commodo faucibus neque ac aliquam. Quisque risus ipsum, egestas sit amet ultrices nec, aliquam non ante.
-		</div>
-	</div>
+        <a class="carousel-control left" href="#carousel" data-slide="prev">‹</a>
+        <a class="carousel-control right" href="#carousel" data-slide="next">›</a>
+    </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- #endregion -->
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <div class="content container">
 
-        <script src="public/javascripts/main.js"></script>
-    </body>
+        <!-- <div class="row"> -->
+        <!-- <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2" id="main"> -->
+        <div class="jumbotron">
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim felis, mattis ac massa vel, cursus gravida augue. Donec et posuere ante, et auctor ligula. Fusce sed magna id lacus interdum mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget sagittis risus. Mauris nunc massa, semper eu vulputate id, ullamcorper eget ipsum. Proin id rutrum velit. Sed sit amet turpis faucibus, cursus elit vel, facilisis dui. Sed id interdum mauris, quis malesuada est. Praesent gravida convallis pharetra. Vestibulum orci lorem, condimentum ut leo quis, ultrices ornare nibh. Duis at quam eu quam ultrices euismod. Donec commodo faucibus neque ac aliquam. Quisque risus ipsum, egestas sit amet ultrices nec, aliquam non ante.
+            </div>
+            <!-- </div> -->
+        </div>
+
+        <div class="pull-right">
+            <div class="btn-group">
+                <a class="btn btn-default" href="#"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-default" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-default" href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <a class="btn btn-default" href="#"><i class="fa fa-info-circle"></i></a>
+        </div>
+
+    </div>
+
+
+
+    <!-- #region JS includes -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="public/javascripts/main.js"></script>
+
+    <!-- #endregion -->
+</body>
+
 </html>
