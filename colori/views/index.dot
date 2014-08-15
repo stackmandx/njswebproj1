@@ -29,7 +29,7 @@
 </head>
 
 <body class="pull_top">
-    <div class="navbar navbar-inverse navbar-fixed-top sticky" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -66,7 +66,42 @@
         </ol>
 
         <div class="carousel-inner">
-            <div class="active item"></div>
+            <!--
+            <?php
+                $counter = 0;
+                $class = 'active';
+                foreach glob("plates/*.{png,jpg,jpeg}", GLOB_BRACE) as $pathToImage)
+                {
+                    $filename = basename($pathToImage);
+                    //PHP5.2.0
+                    $filename = pathinfo($path, PATHINFO_FILENAME);
+
+                    $pathToCaption = 'images/' . $filename . '.txt';
+                    $caption = file_get_contents($pathToCaption);
+                    if($caption !== false){
+                        echo("<li data-target="#carousel" data-slide-to="0" class="active"></li>");
+                        echo ("<div class='item $class' style='background-image:url(\'" . $pathToImage . "\')'><div class='carousel-caption'>".$caption."</div></div>");
+                        $counter++;
+                        $class = '';
+                    }
+                }
+            ?>
+            -->
+            <div class="active item">
+                <div class="carousel-caption">
+                    <!-- container for padding -->
+                    <div class="container">
+                        <div class="text-left text-danger">Share our dish!</div>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-default" href="#"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-default" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-default" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-default" href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                    <a class="btn btn-default" href="#"><i class="fa fa-info-circle"></i></a>
+                </div>
+            </div>
             <div class="item"></div>
             <div class="item"></div>
         </div>
@@ -77,29 +112,29 @@
 
     <!-- #endregion -->
 
-    <div class="content container">
+    <div class="content container" id="about">
 
         <!-- <div class="row"> -->
         <!-- <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2" id="main"> -->
         <div class="jumbotron">
             <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim felis, mattis ac massa vel, cursus gravida augue. Donec et posuere ante, et auctor ligula. Fusce sed magna id lacus interdum mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget sagittis risus. Mauris nunc massa, semper eu vulputate id, ullamcorper eget ipsum. Proin id rutrum velit. Sed sit amet turpis faucibus, cursus elit vel, facilisis dui. Sed id interdum mauris, quis malesuada est. Praesent gravida convallis pharetra. Vestibulum orci lorem, condimentum ut leo quis, ultrices ornare nibh. Duis at quam eu quam ultrices euismod. Donec commodo faucibus neque ac aliquam. Quisque risus ipsum, egestas sit amet ultrices nec, aliquam non ante.
+                    <i class="fa fa-quote-left pull-left fa-2x"></i>
+                    <i class="fa fa-quote-right pull-right fa-2x"></i>
+                <blockquote>
+                    <p>Food tastes good when you add great ingredients but it needs heart to make it amazing. You can buy the best ingredients in the world, but you cannot buy the heart.</p>
+                    <footer><cite>Chef Luigi Contessi</cite></footer>
+                </blockquote>
             </div>
             <!-- </div> -->
         </div>
 
-        <div class="pull-right">
-            <div class="btn-group">
-                <a class="btn btn-default" href="#"><i class="fa fa-instagram"></i></a>
-                <a class="btn btn-default" href="#"><i class="fa fa-facebook"></i></a>
-                <a class="btn btn-default" href="#"><i class="fa fa-twitter"></i></a>
-            </div>
-            <a class="btn btn-default" href="#"><i class="fa fa-info-circle"></i></a>
-        </div>
+
 
     </div>
 
+    <div class="content container">
 
+    </div>
 
     <!-- #region JS includes -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
