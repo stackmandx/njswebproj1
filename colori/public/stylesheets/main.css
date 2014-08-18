@@ -195,19 +195,44 @@ email: logan_kruger@hotmail.com*/
     background-color: rgba(238,238,238,0.7);
 }
 
-#about blockquote p{
-   font-family: otto;
-   font-size: 40px;
+#about blockquote p {
+    font-family: otto;
+    font-size: 40px;
 }
 
-/*
-.content > div {
-    margin: 0 auto;
-    width: 90%;
-    color: white;
-    height: 100%;
-    overflow-y: scroll;
-    z-index: 1000;
-    background: rgba(0,0,0,0.5);
+#about blockquote {
+    border-right: none;
 }
-    */
+
+.content {
+    font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+}
+
+#menu{
+    background-color: rgb(238,238,238);
+    -moz-background-clip: content-box;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    opacity: 0.7;
+}
+
+
+#menu a{
+    color: #000;
+}
+
+#menu a div:hover{
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 200ms;
+}
+
+#menu p{
+    margin-bottom:20px;
+    font-size: medium;
+}
+
+.inverse {
+    color: #fff;
+    background-color: rgb(16,16,16);
+}

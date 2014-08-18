@@ -118,12 +118,17 @@
         <!-- <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2" id="main"> -->
         <div class="jumbotron">
             <div>
-                    <i class="fa fa-quote-left pull-left fa-2x"></i>
-                    <i class="fa fa-quote-right pull-right fa-2x"></i>
-                <blockquote>
+                <i class="fa fa-quote-left pull-left fa-2x"></i>
+                <i class="fa fa-quote-right pull-right fa-2x"></i>
+                <blockquote class="blockquote-reverse">
                     <p>Food tastes good when you add great ingredients but it needs heart to make it amazing. You can buy the best ingredients in the world, but you cannot buy the heart.</p>
                     <footer><cite>Chef Luigi Contessi</cite></footer>
                 </blockquote>
+                <p>Colori Kitchen is a classic Italian trattoria in the heart of downtown Los Angeles.</p>
+
+                <p>Featuring the inspired, bravissimo cooking of Executive Chef Luigi Barducci Contessi. Colori Kitchen serves the finest Italian Experience in Los Angeles. Opened in 2006, the warm and welcoming brick-walled restaurant started with the belief that true Italian food begins with the heart. By pouring his love into his dishes, Chef Luigi is able to bring you delicious pastas, soups, salads, fish and meat dishes, plus traditional Italian deserts unlike any other.</p>
+
+                <p>Service is friendly, prices are affordable and the quality and variety of the cooking is a constant source of delight and wonder for the ever-growing community of Colori Kitchen regulars. Let Chef Luigi make your tastebuds sing.</p>
             </div>
             <!-- </div> -->
         </div>
@@ -132,8 +137,21 @@
 
     </div>
 
-    <div class="content container">
-
+    <div class="content container" id="menu">
+        <div class="row">
+            <a href="#" id="lunch">
+                <div class="text-center col-xs-12 col-md-6">
+                    <h1>Lunch</h1>
+                    <p>Simplicity doesn’t mean you need to sacrifice passion. Lunch should be delicious and the pick me up you need during the day and we’ve got it right here</p>
+                </div>
+            </a>
+            <a href="#" id="dinner">
+                <div class="text-center col-xs-12 col-md-6 inverse">
+                    <h1>Dinner</h1>
+                    <p>As the sun sets, our kitchen lights up the fire. Our Dinner Menu will entice your senses with true passion of what Italian cooking really should be. Let us show you.</p>
+                </div>
+            </a>
+        </div>
     </div>
 
     <!-- #region JS includes -->
