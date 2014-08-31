@@ -1,0 +1,19 @@
+            <?php
+                $counter = 0;
+                $class = 'active';
+                foreach glob("plates/*.{png,jpg,jpeg}", GLOB_BRACE) as $pathToImage)
+                {
+                    $filename = basename($pathToImage);
+                    //PHP5.2.0
+                    $filename = pathinfo($path, PATHINFO_FILENAME);
+
+                    $pathToCaption = 'images/' . $filename . '.txt';
+                    $caption = file_get_contents($pathToCaption);
+                    if($caption !== false){
+                        echo("<li data-target="#carousel" data-slide-to="0" class="active"></li>");
+                        echo ("<div class='item $class' style='background-image:url(\'" . $pathToImage . "\')'><div class='carousel-caption'>".$caption."</div></div>");
+                        $counter++;
+                        $class = '';
+                    }
+                }
+            ?>
