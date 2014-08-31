@@ -65,7 +65,7 @@
 
 @media (min-width: 768px) {
     .carousel-caption {
-        background-color: rgba(255,255,255,0.7);
+        background-color: rgba(255,255,255,0.4);
         max-width: 220px;
         right: 0;
         left: 80%;
@@ -188,7 +188,7 @@ email: logan_kruger@hotmail.com*/
 }
 
 .content {
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 .jumbotron {
@@ -197,11 +197,15 @@ email: logan_kruger@hotmail.com*/
 
 #about blockquote p {
     font-family: otto;
-    font-size: 40px;
+    font-size: 48px;
 }
 
 #about blockquote {
-    border-right: none;
+    border-left: none;
+}
+
+#about footer {
+	font-size:24px;
 }
 
 .content {
@@ -232,7 +236,16 @@ email: logan_kruger@hotmail.com*/
     font-size: medium;
 }
 
+#menu h3{
+    text-decoration: underline;
+}
+
+#menu .footnote{
+	font-size:x-small;
+}
+
 .inverse {
     color: #fff;
+    background-clip: content-box;
     background-color: rgb(16,16,16);
 }

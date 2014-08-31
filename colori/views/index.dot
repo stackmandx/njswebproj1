@@ -38,18 +38,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html" class="navbar-brand"><strong>colori kitchen</strong></a>
+                <a href="#about" class="navbar-brand"><strong>colori kitchen</strong></a>
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index">HOME</a></li>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="menu">MENU</a></li>
-                    <li><a href="catering">CATERING</a></li>
-                    <li><a href="gallery">GALLERY</a></li>
-                    <li><a href="luigi">LUIGI'S CORNER</a></li>
-                    <li><a href="contact">CONTACT US</a></li>
+                    <li class="active"><a href="index" id="site-nav-home">HOME</a></li>
+                    <li><a href="#about" id="site-nav-about">ABOUT</a></li>
+                    <li><a href="#menu" id="site-nav-menu">MENU</a></li>
+                    <li><a href="catering" id="site-nav-cater">CATERING</a></li>
+                    <li><a href="#gallery" id="site-nav-gallery">GALLERY</a></li>
+                    <li><a href="luigi" id="site-nav-luigi">LUIGI'S CORNER</a></li>
+                    <li><a href="contact" id="site-nav-contact">CONTACT US</a></li>
                 </ul>
             </div>
 
@@ -67,33 +67,36 @@
 
         <div class="carousel-inner">
             <!--
-            <?php
-                $counter = 0;
-                $class = 'active';
-                foreach glob("plates/*.{png,jpg,jpeg}", GLOB_BRACE) as $pathToImage)
-                {
-                    $filename = basename($pathToImage);
-                    //PHP5.2.0
-                    $filename = pathinfo($path, PATHINFO_FILENAME);
-
-                    $pathToCaption = 'images/' . $filename . '.txt';
-                    $caption = file_get_contents($pathToCaption);
-                    if($caption !== false){
-                        echo("<li data-target="#carousel" data-slide-to="0" class="active"></li>");
-                        echo ("<div class='item $class' style='background-image:url(\'" . $pathToImage . "\')'><div class='carousel-caption'>".$caption."</div></div>");
-                        $counter++;
-                        $class = '';
-                    }
-                }
-            ?>
+		PHP CODE GOES IN HERE
+		PHP CODE GOES IN HERE
+		PHP CODE GOES IN HERE
+		PHP CODE GOES IN HERE
+		PHP CODE GOES IN HERE
             -->
             <div class="active item">
-                <div class="carousel-caption">
+                <div class="carousel-caption hidden">
                     <!-- container for padding -->
                     <div class="container">
                         <div class="text-left text-danger">Share our dish!</div>
                     </div>
                     <div class="btn-group">
+<!--
+
+
+
+
+This carousel-caption class needs to be repeated for every slideshow picture. PHP above should auto generate them, but I need this template first.
+Add links to social media here
+Add links to social media here
+Add links to social media here
+Add links to social media here
+Add links to social media here
+
+
+
+
+
+-->
                         <a class="btn btn-default" href="#"><i class="fa fa-instagram"></i></a>
                         <a class="btn btn-default" href="#"><i class="fa fa-facebook"></i></a>
                         <a class="btn btn-default" href="#"><i class="fa fa-twitter"></i></a>
@@ -112,7 +115,7 @@
 
     <!-- #endregion -->
 
-    <div class="content container" id="about">
+    <div class="content container site-nav-item" id="about">
 
         <!-- <div class="row"> -->
         <!-- <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2" id="main"> -->
@@ -120,9 +123,9 @@
             <div>
                 <i class="fa fa-quote-left pull-left fa-2x"></i>
                 <i class="fa fa-quote-right pull-right fa-2x"></i>
-                <blockquote class="blockquote-reverse">
+                <blockquote class="blockquote clearfix">
                     <p>Food tastes good when you add great ingredients but it needs heart to make it amazing. You can buy the best ingredients in the world, but you cannot buy the heart.</p>
-                    <footer><cite>Chef Luigi Contessi</cite></footer>
+                    <footer class="pull-right"><cite>Chef Luigi Contessi</cite></footer>
                 </blockquote>
                 <p>Colori Kitchen is a classic Italian trattoria in the heart of downtown Los Angeles.</p>
 
@@ -137,21 +140,124 @@
 
     </div>
 
-    <div class="content container" id="menu">
-        <div class="row">
-            <a href="#" id="lunch">
+    <div class="content container site-nav-item hidden" id="menu">
+        <div class="row menu-nav-main">
+            <a href="#menu-nav-lunch" id="lunch">
                 <div class="text-center col-xs-12 col-md-6">
                     <h1>Lunch</h1>
                     <p>Simplicity doesn’t mean you need to sacrifice passion. Lunch should be delicious and the pick me up you need during the day and we’ve got it right here</p>
                 </div>
             </a>
-            <a href="#" id="dinner">
+            <a href="#menu-nav-dinner" id="dinner">
                 <div class="text-center col-xs-12 col-md-6 inverse">
                     <h1>Dinner</h1>
                     <p>As the sun sets, our kitchen lights up the fire. Our Dinner Menu will entice your senses with true passion of what Italian cooking really should be. Let us show you.</p>
                 </div>
             </a>
         </div>
+	<div class="row hidden menu-nav-item" id="menu-nav-lunch">
+	    <div class="col-xs-12">
+		<div class="col-xs-12">
+<!--
+
+
+
+Add lunch menu here
+Add lunch menu here
+Add lunch menu here
+Add lunch menu here
+Add lunch menu here
+
+
+
+-->
+		<h1>Lunch</h1>
+
+		<h3>Category</h3>
+			<strong>Name</strong> type $price
+			<p>Description</p>
+
+
+		</div>
+	    </div>
+	</div>
+	<div class="row hidden menu-nav-item" id="menu-nav-dinner">
+	    <div class="col-xs-12 inverse">
+		<div class="col-xs-12">
+<!--
+
+
+Example menu here
+Add dinner menu here
+Add dinner menu here
+Add dinner menu here
+Add dinner menu here
+Add dinner menu here
+
+
+
+-->
+		<h1>Dinner</h1>
+		<lead>As the sun sets, our kitchen lights up the fire. Our Dinner Menu will entice your senses with the true passion of what Italian cooking really should be. </lead>
+
+
+		<h3>Antipasti</h3>
+			<strong>Bruschetta</strong> vegan | vegetarian $5.00 
+			<p>Ciabatta bread topped with mix of chopped Roma tomatoes, onions, garlic tossed in Evoo </p>
+
+			<strong>Melanzane parmigiana</strong> vegetarian $11.00
+			<p>Grilled eggplants topped with tomato sauce and mozzarella </p>
+
+			<strong>Carpaccio di carne*</strong> $12.00
+			<p>Home cured beef Carpaccio with wild arugula salad and grape tomatoes topped with fresh mushroom in a light lemon dressing </p>
+			 
+			<strong>Antipasto misto</strong> $14.00
+			<p>Sliced prosciutto, mortadella, salame served with marinated red and yellow bell peppers </p>
+
+			<strong>Caprese</strong> vegetarian $9.00
+			<p>Roma tomatoes topped with fresh Mozzarella and basil</p>
+
+			<p class="footnote">* These items are cooked to order and may be served raw or undercooked. Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of food-borne illness. </p>
+
+		<h3>Insalate</h3>
+
+			<strong>Insalata verde</strong> vegan $7.00
+			<p>Baby greens and strings carrots with balsamic dressing </p>
+
+			<strong>Insalata Caesar</strong> vegetarian $9.00 
+			<p>Crunchy romaine heart lettuce with home made Caesar dressing topped with shaved Parmesan cheese and croutons </p>
+
+			<strong>Rucola e parmigiano</strong> vegetarian $9.00
+			<p>Baby wild arugula topped with shaved Parmesan cheese </p>
+
+			<strong>Endivia e rucola e noci</strong> vegetarian $10.00
+			<p>Baby wild arugula and Belgian endive salad, with walnuts in a light lemon dressing with shaved Parmesan cheese</p>
+
+			<strong>Sergio salad</strong> $13.00
+			<p>Fresh mixed baby greens in a light lemon vinaigrette topped with smoked salmon, red onion and grape tomatoes</p>
+
+
+		<h3>Zuppe (Soups)</h3> 
+
+			<strong>Minestrone</strong> vegan $7.00
+			<p>Hearty Italian vegetable soup</p> 
+
+			<strong>Tomato Bisque</strong> vegan $7.00 
+			<p>A classic take on the velvety sensation. Creamy and delicious.</p> 
+
+			<strong>Tortilla</strong> vegetarian $7.00
+			<p>Lightly spicy! California, Ancho and Pasilla chilies, blended tortillas and a touch of tomato. Served with sour cream and chips</p> 
+
+	    </div>
+	    </div>
+	</div>
+    </div>
+
+    <div class="content container site-nav-item hidden">
+	<div class="row">
+	    <div class="col-xs-12">
+	    </div>
+	</div>
     </div>
 
     <!-- #region JS includes -->
